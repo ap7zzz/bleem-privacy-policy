@@ -7,12 +7,20 @@ No usage of data outside of the aformentioned cases will happen and the data is 
 Stored Information
 The bot may store the following information automatically when being invited to a new Discord Server:
 
-id with the Server's ID as value.
-language with value en
-prefix with value p.
-welcome_background with value color_white
-welcome_channel with value none
-welcome_color with value hex:000000
-welcome_icon with value purr
-welcome_message with value Welcome {mention}!
-No other information outside of the above mentioned one will be stored.
+`Guild IDs`
+`Guild Names`
+`Channel IDs`
+`Role IDs`
+`User IDs`
+`Message Timestamps`
+`Message IDs`
+`Nicknames and Usernames`
+`Last deleted message content (stored for a max of 2 hours or less, 19 entries allowed)`
+`Last message edit history (stored for a max of 2 hours or less, 19 entries allowed)`
+
+<h1>Why do you need the data and how is it used?</h1>
+
+When a command is invoked, we store that message content for a maximum of 14 days for debugging purposes. We also store a maximum of 18 entries for edited messages and sniping messages that will expire in two hours or less in volatile memory.
+
+Guild IDs, Channel IDs, Role IDs, User IDs and Message IDs are all stored for our system to aggregate values to find data.
+
